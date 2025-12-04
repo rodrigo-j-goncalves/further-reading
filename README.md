@@ -16,7 +16,7 @@ A customizable quarto extension that collects all external links from a presenta
 -  The 'Further reading' slide has the following structure:
     - Title of the slide (default: 'Further reading'). This is applied as a `## header`
     - Subtitle of the slide (default: 'All the links to other sources are listed below'). This is added as 'normal slide text'.
-    - Scrolling message (default: 'Scroll down to see all links'). This is added as 'normal slide text'.
+    - Scrolling message (default: 'Scroll down to see all links'). This is added as 'normal slide text' but in italics. If the links are visible in a single slide, there is no scrolling, and this text is not shown.
 
 ## Who created this
 This filter is heavily based on James Balamuta's [linkate](https://github.com/coatless-quarto/linkate).
@@ -64,23 +64,6 @@ further-reading:
 ## Minimum example
 
 This minimum quarto revealjs code (minimum_example.qmd):
-
-```
----
-title: 'Example'
----
-
-## Slide 1
-some tesxt
-
-## Slide 2
-
-some text and internal links
-
-## Slide 3
-some text and links
-
-```
 
 Will produce this minimum_example.hml
 
