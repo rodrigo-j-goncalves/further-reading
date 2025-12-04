@@ -4,24 +4,31 @@ A customizable quarto extension that collects all external links from a presenta
 ## Features
 
 - This extension is done for and tested in quarto@revealjs documents (it may work in other cases, I don't know).
-- During a presentation/lecture you normally use links to other resources in case the user/student wants material for _further reading_. The purpose of this extension is to provide, in a single slide, a list of all those links. This means that by design **only external links are listed** (specifically http, https, ftp; let me know if you need another ones).
+- During a presentation/lecture, you normally use links to other resources in case the user/student wants material for _further reading_. The purpose of this extension is to provide, in a single slide, a list of all those links. This means that by design, **only external links are listed** (specifically http, https, ftp; let me know if you need another ones).
   -  Internal links are ignored, such as:
-    -  a link to a given slide within the current presentation (eg. `[Go to slide nr 4](#slide-id-4)`)
+    -  a link to a given slide within the current presentation (eg `[Go to slide nr 4](#slide-id-4)`)
     -  a link to go to the begining (`[Go to the start](#)`)
     -  a link/button to go back (`[Go back](javascript:history.back())`)
-- If a link appears multiple times during the presentation (in same or separate slides), it will be listed only once.
-- The collected external links are listed in a single slide, that can be customized (see below). If the links are many and potentially too many for a single slide, the slide turns into a scrollable one so the list can be accessed in all cases.
--  The slide has the following structure:
-    - Title of the slide (default: 'Further reading')
-    - Subtitle of the slide (default: 'All the links to other sources are listed below')
-    - Scrolling message (default: 'Scroll down to see all links')
+- If a link appears multiple times during the presentation (in the same or separate slides), it will be listed only once.
+- The collected external links are listed in a single slide, let's call it the 'Further reading slide', which is automatically added at the end of the presentation every time you render your Qaurto document.
+- If the links are potentially too many for a single slide, the slide automatically turns into a scrollable one, so the list can be accessed in all cases.
+- The 'Further reading' slide can be customized (see below). 
+-  The 'Further reading' slide has the following structure:
+    - Title of the slide (default: 'Further reading'). This is applied as a `## header`
+    - Subtitle of the slide (default: 'All the links to other sources are listed below'). This is added as 'normal slide text'.
+    - Scrolling message (default: 'Scroll down to see all links'). This is added as 'normal slide text'.
 
+## Who created this
+This filter is heavily based on James Balamuta's [linkate](https://github.com/coatless-quarto/linkate).
+I needed a bit more customization because I teach in Spanish and English, and wanted to use different languages, custom titles, and subtitles.
+The other feature I wanted is that the extension only lists the EXTERNAL links and ignores the internal links (within the current presentation).
+So the original creator is J. Balamuta; I just customized it for my needs and put it here in case anyone else finds it useful.
   
 ## Installing
 `quarto add rodrigo-j-goncalves/further-reading`
  
 ## Usage
- 
+
 Simply add the filter to your YAML header:
  
  ```
@@ -30,7 +37,11 @@ Simply add the filter to your YAML header:
 
 ```
 
+Besides listing the filter in the YAML header, you don't need to do anything in your Quarto document.
+
 ## Customizable options
+
+You can customize the text that will be shown on the 'Further reading' slide (added at the end of the presentation).
 
 By customizing the collected links slide, you can also use different languages and expressions.
 
@@ -50,3 +61,36 @@ further-reading:
   scroll_text: "Desliza hacia abajo para ver los links"
 
 ```
+## Minimum example
+
+This minimum quarto revealjs code (minimum_example.qmd):
+
+```
+---
+title: 'Example'
+---
+
+## Slide 1
+some tesxt
+
+## Slide 2
+
+some text and internal links
+
+## Slide 3
+some text and links
+
+```
+
+Will produce this minimum_example.hml
+
+## Customization example
+
+to be done
+
+## Full example
+
+- customization of 3 fields
+- inner links
+- repeated links
+  
