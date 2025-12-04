@@ -63,9 +63,9 @@ further-reading:
 ```
 ## Minimum example
 
-This minimum quarto revealjs code (minimum_example.qmd):
+This minimum quarto revealjs code ([minimum_example.qmd](docs/minimum_example.qmd)
 
-Will produce this minimum_example.hml
+Will be render as [this revealjs presentation](docs/minimum_example.hml)
 
 ## Customization example
 
