@@ -65,7 +65,7 @@ further-reading:
 
 This minimum quarto revealjs code ([minimum_example.qmd](docs/minimum_example.qmd)
 
-Will be rendered as [this revealjs presentation](docs/minimum_example.html)
+Will be rendered as [this revealjs presentation](rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/minimum_example.html)
 
 ## Customization example
 
