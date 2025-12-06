@@ -69,11 +69,12 @@ Will be rendered as [this revealjs presentation](https://rodrigo-j-goncalves.git
 
 ## Customization example
 
-to be done
+- Too many links to fit in a single slide -> Sscroll functionality
+- Customization of the **Further reading slide**
+  - Slide title
+  - Subtitle
+  - Scrolling message
 
-## Full example
+This quarto revealjs code ([medium.qmd](docs/medium_example.qmd)
 
-- customization of 3 fields
-- inner links
-- repeated links
-  
+Will be rendered as [this revealjs presentation](https://rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/medium_example.html)
