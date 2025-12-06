@@ -63,9 +63,9 @@ further-reading:
 ```
 ## Minimum example
 
-This minimum quarto revealjs code ([minimum_example.qmd](docs/minimum_example.qmd)
+Check the code for a [minimum example](docs/minimum_example.qmd).
 
-Will be rendered as [this revealjs presentation](https://rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/minimum_example.html)
+This is the rendered [this revealjs presentation](https://rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/minimum_example.html)
 
 ## Customization example
 
@@ -75,6 +75,12 @@ Will be rendered as [this revealjs presentation](https://rodrigo-j-goncalves.git
   - Subtitle
   - Scrolling message
 
-This quarto revealjs code ([medium.qmd](docs/medium_example.qmd)
+This is the quarto revealjs code for a [medium example](docs/medium_example.qmd) with the customizations.
 
-Will be rendered as [this revealjs presentation](https://rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/medium_example.html)
+This is the rendered [revealjs presentation](https://rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/medium_example.html)
+
+
+
+
+
+.
