@@ -1,4 +1,7 @@
-# further-reading ![](docs/further-reading-logo.svg)
+<img src="docs/further-reading-logo.svg" align="right" width="120" />
+
+# further-reading
+
 A customizable quarto extension that collects all external links from a presentation and lists them on the last slide (which is added automatically).
 
 ## Features
