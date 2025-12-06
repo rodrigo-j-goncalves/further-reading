@@ -1,0 +1,42 @@
+---
+title: '`further-reading`<br>Quarto extension<br><br>Minimum example'
+format: revealjs
+filters:
+  - further-reading
+
+self-contained: true
+---
+
+## What is this
+
+- `further-reading` is a Quarto extension to be used with [revealjs](https://quarto.org/docs/presentations/revealjs/) format.
+- It takes all external links from the presentation and list them in a single slide at the end.
+- This filter extension is heavily based on J. Balamuta's [linkate](https://github.com/coatless-quarto/linkate)
+
+## Minimum example 
+
+In the next slides we'll use several links. 
+
+- The [`further-reading`](https://github.com/rodrigo-j-goncalves/further-reading/) extension collects all the external links and list them (see last slide)
+- Only *external links*^[links to resources outside this presentation, e.g. `https://quarto.org/`] are considered:
+  - https, http, ftp
+  - We could add more (let me know)
+- Internal^[links to content within the presentation, e.g. `[Jump to Intro](#intro)`] links are ignored.
+  
+## Euler
+
+Do you know who [Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler) was?
+
+## Laplace
+
+And did you know [Laplace](https://en.wikipedia.org/wiki/Pierre-Simon_Laplace) (who wrote about [celestial mechanics](https://en.wikipedia.org/wiki/Trait%C3%A9_de_m%C3%A9canique_c%C3%A9leste)) 
+
+once said,
+
+"Read Euler, read Euler, he is the master of us all"?
+
+## Note
+
+Note that `https://quarto.org/` is not listed in the last slide. This is because it's written in the qmd file as a string, so technically it is not a link :)
+
+To be included in quarto, it should be written as a link, eg `[text](URL)` or `<URL>`

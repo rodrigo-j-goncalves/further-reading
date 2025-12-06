@@ -1,0 +1,89 @@
+---
+title: '`further-reading`<br>Quarto extension<br><br>Medium example'
+format: revealjs
+filters:
+  - further-reading
+
+further-reading:
+  title: "Material de lectura"
+  subtitle: "Lista de fuentes y materiales usados en esta clase"
+  scroll_text: "⬇️ Deslizar hacia abajo para ver todo"
+
+self-contained: true
+---
+
+## What is this
+
+- `further-reading` is a Quarto extension to be used with [revealjs](https://quarto.org/docs/presentations/revealjs/) format.
+- This filter extension is heavily based on J. Balamuta's [linkate](https://github.com/coatless-quarto/linkate)
+- It takes all external links from the presentation and list them in a single slide at the end.
+- If the links are too many for a single slide, scrolling functionality is added so the full list can be read.
+
+## Medium example 
+
+In addition to the features in [minimum_example](https://rodrigo-j-goncalves.github.io/quarto-extensions/further-reading/docs/minimum_example.html), we show here
+
+- the case when the links are too many to fit in a single slide
+- customization of the **Further reading slide**:
+  - slide title
+  - subtitle
+  - scrolling message
+
+## Customization (text)
+
+I will use the following custom text for the **Further reading slide**:
+
+| Text | Default | Custom (this presentation) |
+|------|---------|-------------|
+| Slide title | Further reading | Material de lectura |
+| Subtitle | All the links to other sources are listed below | Lista de fuentes y materiales usados en esta clase |
+| Scrolling message | Scroll down to see all links | ⬇️ Deslizar hacia abajo para ver todo |
+
+
+## Customization (code)
+
+The customization is coded in the YAML header
+
+```
+---
+format: revealjs
+filters:
+  - further-reading
+
+further-reading:
+  title: "Material de lectura"
+  subtitle: "Lista de fuentes y materiales usados en esta clase"
+  scroll_text: "⬇️ Deslizar hacia abajo para ver todo"
+
+---
+
+```
+
+  
+## Euler
+
+Do you know who [Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler) was?
+
+## Laplace
+
+And did you know [Laplace](https://en.wikipedia.org/wiki/Pierre-Simon_Laplace) (who wrote about [celestial mechanics](https://en.wikipedia.org/wiki/Trait%C3%A9_de_m%C3%A9canique_c%C3%A9leste)) 
+
+once said,
+
+"Read Euler, read Euler, he is the master of us all"?
+
+## Note
+
+Note that `https://quarto.org/` is not listed in the last slide. This is because it's written in the qmd file as a string, so technically it is not a link :)
+
+To be included in quarto, it should be written as a link, eg `[text](URL)` or `<URL>`
+
+## The Bernoullis
+[Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli) was Euler's advisors. Amazing!
+
+The [Bernoulli family](https://en.wikipedia.org/wiki/Bernoulli_family) contributed to maths and physics!
+
+Check these names:
+
+[Jacob Bernoulli](https://en.wikipedia.org/wiki/Jacob_Bernoulli), [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), [Nicolaus I Bernoulli](https://en.wikipedia.org/wiki/Nicolaus_I_Bernoulli), [Nicolaus II Bernoulli](https://en.wikipedia.org/wiki/Nicolaus_II_Bernoulli), [Daniel Bernoulli](https://en.wikipedia.org/wiki/Daniel_Bernoulli), [Johann II Bernoulli](https://en.wikipedia.org/wiki/Johann_II_Bernoulli), [Johann III Bernoulli](https://en.wikipedia.org/wiki/Johann_III_Bernoulli), [Jakob II Bernoulli](https://en.wikipedia.org/wiki/Jakob_II_Bernoulli), [Ludwig Bernoully](https://en.wikipedia.org/wiki/Ludwig_Bernoully), [Hans Bernoulli](https://en.wikipedia.org/wiki/Hans_Benno_Bernoulli), [Elisabeth Bernoulli](https://en.wikipedia.org/wiki/Elisabeth_Bernoulli)
+
