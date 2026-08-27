@@ -3,7 +3,7 @@
 <br>
 
 # further-reading
-A customizable quarto extension that collects all external links from a presentation and lists them on the last slide (which is added automatically).
+A customizable quarto extension that collects all _external_ links in a presentation and lists them on the last slide (which is added automatically).
 
 ## Features
 
@@ -30,11 +30,13 @@ So the original creator is J. Balamuta; I just customized it for my needs and pu
   
 ## Installing
 `quarto add rodrigo-j-goncalves/further-reading`
- 
+
+
 ## Usage
 
 Simply add the filter to your YAML header:
- 
+
+
  ```
   filters:
     - further-reading
