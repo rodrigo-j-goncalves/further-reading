@@ -1,0 +1,7 @@
+name: further-reading
+title: "List external links at the end of a presentation"
+author: "Rodrigo J. Gonçalves"
+version: "0.1.0"
+contributes:
+  filters:
+    - further-reading.lua

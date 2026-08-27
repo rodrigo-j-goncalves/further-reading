@@ -1,0 +1,25 @@
+# Ignore everything...
+*
+
+# ...except these:
+!.gitignore
+!README.md
+!LICENSE
+!CHANGELOG.md
+
+# Extension
+!_extensions/
+!_extensions/rodrigo-j-goncalves/
+!_extensions/rodrigo-j-goncalves/further-reading/
+!_extensions/rodrigo-j-goncalves/further-reading/_extension.yml
+!_extensions/rodrigo-j-goncalves/further-reading/further-reading.lua
+
+# Docs
+!docs/
+!docs/further-reading-logo.svg
+!docs/example.qmd
+!docs/example.html
+!docs/minimum_example.qmd
+!docs/minimum_example.html
+!docs/medium_example.qmd
+!docs/medium_example.html
