@@ -11,7 +11,7 @@ further-reading:
   subtitle: "Lista de fuentes y materiales usados en esta clase"
   scroll_text: "⬇️ Deslizar hacia abajo para ver todo"
 
-self-contained: true
+embed-resources: true
 ---
 
 ## What is this
