@@ -2,7 +2,7 @@
 title: '`further-reading`<br>Quarto extension<br><br>Minimum example'
 format:
   revealjs:
-    favicon: further-reading-logo.svg
+    favicon: docs/further-reading-logo.svg
 filters:
   - further-reading
 

@@ -14,11 +14,13 @@
 !_extensions/rodrigo-j-goncalves/further-reading/_extension.yml
 !_extensions/rodrigo-j-goncalves/further-reading/further-reading.lua
 
+# Root-level example
+!example.qmd
+!example.html
+
 # Docs
 !docs/
 !docs/further-reading-logo.svg
-!docs/example.qmd
-!docs/example.html
 !docs/minimum_example.qmd
 !docs/minimum_example.html
 !docs/medium_example.qmd
